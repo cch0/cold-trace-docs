@@ -1,0 +1,38 @@
+// ColdTrace brand colors — amber accent on dark slate.
+// Matches the demo-video intros/outros, the YouTube banner, and the profile pic.
+//
+// Inherits the base `dark` scheme and overrides the accent + a few neighbours.
+
+@import "./color_schemes/dark";
+
+// Brand palette
+$amber: #f59e0b;          // primary accent (links, buttons, focus)
+$amber-dim: #b45309;      // hover / pressed
+$slate-900: #0f172a;      // page background — matches video intros exactly
+$slate-800: #141b2d;      // sidebar / panel background, slightly lifted
+$slate-700: #1e293b;      // borders, dividers
+$slate-fg: #e2e8f0;       // body text on dark
+
+// Background + surfaces
+$body-background-color: $slate-900;
+$sidebar-color: $slate-800;
+$search-background-color: $slate-800;
+$table-background-color: $slate-800;
+$code-background-color: $slate-800;
+
+// Text + headings
+$body-text-color: $slate-fg;
+$body-heading-color: $slate-fg;
+$nav-child-link-color: $slate-fg;
+
+// Borders / dividers
+$border-color: $slate-700;
+
+// Links + accents — amber across the board
+$link-color: $amber;
+$btn-primary-color: $amber;
+$base-button-color: $slate-800;
+
+// Code text — keep readable on the slate background
+$code-text-color: #fcd34d;        // soft amber-yellow for inline code
+$code-linenumber-color: $slate-fg;
