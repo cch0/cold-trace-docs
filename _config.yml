@@ -1,0 +1,36 @@
+title: ColdTrace
+description: User documentation for ColdTrace — a multi-agent AI investigator for aviation + maritime intelligence
+url: https://cch0.github.io
+baseurl: "/cold-trace-docs"
+
+# Just the Docs theme — sidebar nav, search, light/dark toggle. Built by GitHub
+# Pages on push; no local build step required.
+remote_theme: just-the-docs/just-the-docs
+
+color_scheme: dark
+search_enabled: true
+heading_anchors: true
+
+# Top-right corner links on every page.
+aux_links:
+  "Project on GitHub":
+    - "https://github.com/cch0/cold-trace"
+  "These docs on GitHub":
+    - "https://github.com/cch0/cold-trace-docs"
+
+aux_links_new_tab: true
+
+# Footer text.
+footer_content: "&copy; ColdTrace project. Docs source: <a href=\"https://github.com/cch0/cold-trace-docs\">github.com/cch0/cold-trace-docs</a>"
+
+plugins:
+  - jekyll-remote-theme
+  - jekyll-seo-tag
+
+# Exclude these from the build output.
+exclude:
+  - README.md
+  - LICENSE
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
