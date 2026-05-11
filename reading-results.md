@@ -14,6 +14,8 @@ What every symbol on the map means, and how each section of the report is struct
 
 The right-hand pane on the **INVEST** tab is a Leaflet map. After a turn finishes, anything geographic from the investigation gets rendered there. This is also the same kind of map you see on the **LIVE** tab, with slightly different symbol rules for live versus historical contexts.
 
+![LIVE map over Singapore Strait: airplane silhouettes show aircraft, ship silhouettes show vessels, the dashed rectangle marks the active polling region.](images/live-singapore.png)
+
 ### Aircraft
 
 Aircraft appear as airplane silhouettes oriented in the direction they were heading.
@@ -68,6 +70,8 @@ If you see a dashed line, that aircraft was within the configured proximity radi
 ## The report
 
 Every report has the same top-level structure. Some sections only appear when relevant data exists.
+
+![Completed investigation: the report panel on the left shows headline + key findings + recommended actions; the map on the right shows the aircraft and vessels surfaced by the agents.](images/invest-completed.png)
 
 ### The summary
 
@@ -183,4 +187,3 @@ Several ways to dig deeper from a report:
 - [example-queries.md](example-queries.md) — things to ask.
 - [how-it-works.md](how-it-works.md) — what happens behind the scenes.
 - [live-mode.md](live-mode.md) — real-time monitoring.
-- [agent.md](https://github.com/cch0/cold-trace/blob/main/docs/agent.md) — engineering view (for risk scoring details, anomaly rules, specialist outputs).

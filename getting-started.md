@@ -8,8 +8,6 @@ nav_order: 2
 
 A short tour for someone who just opened ColdTrace for the first time. By the end of this page you'll know what the four tabs are for, how to ask your first question, and how to read the answer.
 
-If you're looking for setup instructions (Docker, environment variables, bringing the stack up), that's in the [runbook](https://github.com/cch0/cold-trace/blob/main/docs/runbook.md). This page is for using the app once it's running.
-
 ---
 
 ## What ColdTrace is
@@ -20,7 +18,9 @@ The point of the design is to make **cross-source** questions cheap. Questions l
 
 ## The four tabs
 
-The left rail has four tabs. Each one is for a different shape of work.
+The left rail (far right of the window) has four tabs. Each one is for a different shape of work.
+
+![The INVEST tab on first open: conversations rail on the left, empty thread in the middle, empty map on the right, four-tab nav rail on the far right.](images/invest-empty.png)
 
 | Tab | What it's for |
 |---|---|
@@ -42,7 +42,12 @@ You'll spend almost all your time on **INVEST** and **LIVE**.
     - *"Investigate vessel SEEKER 8 — port visits, sanctions history, and aircraft proximity over the last 90 days."*
 5. Press **⌘↵** (or click **Send**).
 6. The middle column fills with a card: the parsed question, then a progress indicator while the agents work. A broad regional question typically takes a couple of minutes; a follow-up is faster.
+
+   ![In-flight investigation: the question card is at the top, the progress overlay below shows each specialist as it runs (parser → planner → port-behavior → adsb → synthesizer → critic), and the timer ticks up next to the cancel button.](images/invest-in-flight.png)
+
 7. When it finishes, you'll see a structured report — headline, key findings, recommended actions, and a list of source-specific sections you can expand. The map on the right fills with whatever aircraft or vessel positions the report references.
+
+   ![Completed investigation: the report panel on the left shows the headline, key findings, and recommended actions. The map on the right shows the aircraft tracks and vessels surfaced by the agents.](images/invest-completed.png)
 
 For what each piece of the report means, see [reading-results.md](reading-results.md).
 
@@ -115,4 +120,3 @@ These terms come up throughout ColdTrace. You don't need to know all of them to 
 - [reading-results.md](reading-results.md) — what each piece of the report means.
 - [how-it-works.md](how-it-works.md) — plain-English explanation of what happens between your question and the answer.
 - [live-mode.md](live-mode.md) — real-time monitoring details.
-- [use-cases.md](https://github.com/cch0/cold-trace/blob/main/docs/use-cases.md) — full feature inventory.

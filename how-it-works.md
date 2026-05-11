@@ -8,7 +8,7 @@ nav_order: 4
 
 Plain-English walkthrough of what happens between the moment you press **Send** and the moment a report appears on your screen.
 
-No code, no class names, no internal jargon. If you want the engineering view — node graph, model IDs, schema details — see [agent.md](https://github.com/cch0/cold-trace/blob/main/docs/agent.md).
+No code, no class names, no internal jargon.
 
 ---
 
@@ -48,6 +48,8 @@ Based on what your question is about, a **planner** decides which specialists to
 The dispatched specialists run **in parallel** — each one independently pulling its own data, running its own scoring logic, and producing its own findings. They don't share state mid-investigation. They each get the question and report back.
 
 This is the slowest step. A broad regional scan can take a minute or two; a narrow entity-focused query is faster.
+
+![Investigation in flight: each specialist (parser, planner, port-behavior, adsb, synthesizer, critic) turns green as it completes. The timer ticks up; Cancel sits next to it.](images/invest-in-flight.png)
 
 ### 4. It cross-checks the findings
 
@@ -104,4 +106,3 @@ If you switch to the **DEBUG** tab while a question is in flight, you'll see the
 - [getting-started.md](getting-started.md) — first-time tour.
 - [reading-results.md](reading-results.md) — what each piece of the report means.
 - [example-queries.md](example-queries.md) — things to ask.
-- [agent.md](https://github.com/cch0/cold-trace/blob/main/docs/agent.md) — the engineering view (node graph, model IDs, schemas).

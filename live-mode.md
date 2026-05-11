@@ -31,6 +31,8 @@ Switching to the LIVE tab gives you a full-screen map with a side panel on the r
 
 The side panel has the controls; the map shows the data.
 
+![LIVE map over Singapore Strait: ~10 aircraft icons and 20-ish vessel icons inside the active polling rectangle. Side panel on the right has the polling controls, region picker, and aircraft/vessel toggles.](images/live-singapore.png)
+
 ### Side panel — what each section does
 
 **LIVE feeds** at the top tells you which data sources are connected — typically ADSB.lol for aircraft and AISStream.io for vessels.
@@ -90,6 +92,8 @@ You can toggle permanent labels off for aircraft, vessels, or both — useful fo
 
 Click any marker on the map. A popup appears with two actions:
 
+![Popup over a watched vessel: shows the vessel name + MMSI, with two buttons — "Add to watch list" (disabled if already watched) and "🔍 Investigate".](images/live-vessel-popup.png)
+
 | Action | What it does |
 |---|---|
 | **+ Add `<token>` to watch list** | Adds the entity to the watch list. Same as typing the identifier into the watch input. If the entity is already watched, this button is disabled. |
@@ -145,4 +149,3 @@ When a region has weak coverage, you may see the aircraft layer populated but th
 - [getting-started.md](getting-started.md) — first-time tour of the whole app.
 - [example-queries.md](example-queries.md) — questions to ask once you've flipped into INVEST.
 - [reading-results.md](reading-results.md) — how the investigation map differs from the LIVE map.
-- [data-sources.md](https://github.com/cch0/cold-trace/blob/main/docs/data-sources.md) — full reference for ADSB.lol, OpenSky, and AISStream as upstream feeds.

@@ -13,8 +13,6 @@ heading_anchors: true
 
 # Top-right corner links on every page.
 aux_links:
-  "Project on GitHub":
-    - "https://github.com/cch0/cold-trace"
   "These docs on GitHub":
     - "https://github.com/cch0/cold-trace-docs"
 

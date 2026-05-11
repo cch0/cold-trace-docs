@@ -8,7 +8,7 @@ nav_order: 3
 
 Copy-paste queries grouped by what you're trying to find out. Each comes with a one-line description of what kind of answer ColdTrace gives back.
 
-If you want the full feature inventory and verification state, that's in [use-cases.md](https://github.com/cch0/cold-trace/blob/main/docs/use-cases.md). This page is for finding something to try.
+This page is for finding something to try.
 
 > **Note on dates.** The example queries below reference specific dates from the data ColdTrace was tested against. If you're running against a fresh install with different loaded data, replace the dates with ones that exist in your system. The shape of the query is what matters.
 
@@ -152,4 +152,3 @@ These aren't error messages — they're reports of the system's actual conclusio
 - [getting-started.md](getting-started.md) — first-time tour of the app.
 - [reading-results.md](reading-results.md) — what each piece of the report means.
 - [how-it-works.md](how-it-works.md) — what happens between your question and the answer.
-- [use-cases.md](https://github.com/cch0/cold-trace/blob/main/docs/use-cases.md) — full feature inventory with verification status.
