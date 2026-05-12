@@ -36,3 +36,7 @@ Three short demos showing what ColdTrace does end-to-end:
 - **Cross-domain investigation** over Singapore Strait — live density, then a multi-agent investigation against historical data spanning air, sea, and sanctions.
 
 Available on the [ColdTrace YouTube channel](https://www.youtube.com/@ColdTrace-ai).
+
+## Contact
+
+For inquiries: <cchdroid@gmail.com>.
